@@ -9,7 +9,7 @@ No cloud account. No bank login. 100% private. Your data never leaves your devic
 ## Step 1 — Open Your Planner
 
 **Your personal link:**
-> `https://rehanlabs.github.io/ADHD-Budget-Planner/` *(you received this in your Etsy download)*
+> `https://adhd-budget-planner-8q5.pages.dev/` *(you received this in your Etsy download)*
 
 Open it in the **browser listed for your device** below. Do not open it in a random email app or embedded browser — it may not work correctly.
 
