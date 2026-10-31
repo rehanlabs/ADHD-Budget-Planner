@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ADHD Daily Money & Impulse Tracker (Printable)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    @page {
+      size: letter portrait;
+      margin: 0.35in;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #ffffff;
+      color: #1e293b;
+      padding: 16px;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.35;
+    }
+
+    .sheet {
+      max-width: 720px;
+      margin: 0 auto;
+      border: 2px solid #0f766e;
+      border-radius: 12px;
+      padding: 18px 22px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #14b8a6;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+
+    .title-area h1 {
+      font-size: 20px;
+      font-weight: 800;
+      color: #0f766e;
+      letter-spacing: -0.5px;
+    }
+
+    .title-area p {
+      font-size: 11px;
+      color: #64748b;
+      font-weight: 500;
+    }
+
+    .badge-today {
+      background: #f0fdfa;
+      border: 1.5px solid #2dd4bf;
+      border-radius: 8px;
+      padding: 6px 14px;
+      text-align: right;
+    }
+
+    .badge-today span {
+      font-size: 10px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #0d9488;
+      display: block;
+    }
+
+    .badge-today strong {
+      font-size: 18px;
+      color: #0f766e;
+    }
+
+    .section-title {
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #0f766e;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 14px;
+      font-size: 11.5px;
+    }
+
+    th {
+      background: #f0fdfa;
+      color: #0f766e;
+      font-weight: 700;
+      text-align: left;
+      padding: 5px 8px;
+      border-bottom: 1.5px solid #99f6e4;
+      font-size: 10.5px;
+      text-transform: uppercase;
+    }
+
+    td {
+      padding: 6px 8px;
+      border-bottom: 1px solid #e2e8f0;
+      height: 26px;
+    }
+
+    .grid-bottom {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 14px;
+      margin-bottom: 12px;
+    }
+
+    .box {
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 10px 12px;
+      background: #fafafa;
+    }
+
+    .box-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: #0f766e;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+    }
+
+    .dot-grid {
+      height: 110px;
+      background-image: radial-gradient(#cbd5e1 1.2px, transparent 1.2px);
+      background-size: 12px 12px;
+      border-radius: 4px;
+    }
+
+    .check-list {
+      list-style: none;
+      font-size: 11px;
+    }
+
+    .check-list li {
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .checkbox {
+      width: 13px;
+      height: 13px;
+      border: 1.5px solid #0f766e;
+      border-radius: 3px;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    .mood-rating {
+      display: flex;
+      gap: 8px;
+      margin-top: 10px;
+      align-items: center;
+      font-size: 11px;
+      color: #475569;
+    }
+
+    .circle {
+      width: 18px;
+      height: 18px;
+      border: 1.5px solid #0f766e;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      font-weight: 700;
+      color: #0f766e;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 10px;
+      color: #94a39d;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 6px;
+      margin-top: 6px;
+    }
+
+    @media print {
+      body { padding: 0; }
+      .sheet { border: 1.5px solid #0f766e; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sheet">
+    <div class="header">
+      <div class="title-area">
+        <h1>ADHD Daily Money & Impulse Tracker</h1>
+        <p>A companion printable sheet for the ADHD Budget Planner App</p>
+      </div>
+      <div class="badge-today">
+        <span>Today's Safe to Spend</span>
+        <strong>$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+      </div>
+    </div>
+
+    <!-- Section 1: Daily Spends -->
+    <div class="section-title">📊 1. Daily Spending Log (Discretionary Purchases)</div>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 14%;">Time</th>
+          <th style="width: 44%;">Item / Description</th>
+          <th style="width: 16%;">Need / Want</th>
+          <th style="width: 12%;">Amount</th>
+          <th style="width: 14%;">Safe Left</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td></td><td></td><td></td><td>$</td><td>$</td></tr>
+        <tr><td></td><td></td><td></td><td>$</td><td>$</td></tr>
+        <tr><td></td><td></td><td></td><td>$</td><td>$</td></tr>
+        <tr><td></td><td></td><td></td><td>$</td><td>$</td></tr>
+        <tr><td></td><td></td><td></td><td>$</td><td>$</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Section 2: Impulse Urge Parking Lot -->
+    <div class="section-title">⏳ 2. 48-Hour Impulse Urge Parking Lot (Park It Before You Buy It!)</div>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 18%;">Date Parked</th>
+          <th style="width: 42%;">Impulse Item & Store</th>
+          <th style="width: 14%;">Est. Cost</th>
+          <th style="width: 26%;">48h Verdict (Keep / Skip)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td></td><td></td><td>$</td><td>[ ] Bought &bull; [ ] Urge Faded ($ saved)</td></tr>
+        <tr><td></td><td></td><td>$</td><td>[ ] Bought &bull; [ ] Urge Faded ($ saved)</td></tr>
+        <tr><td></td><td></td><td>$</td><td>[ ] Bought &bull; [ ] Urge Faded ($ saved)</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Section 3 & 4: Brain Dump & Dopamine Check -->
+    <div class="grid-bottom">
+      <div class="box">
+        <div class="box-title">📝 Brain Dump Money Scratchpad</div>
+        <div class="dot-grid"></div>
+      </div>
+
+      <div class="box">
+        <div class="box-title">🧘 Daily Dopamine Check-in</div>
+        <ul class="check-list">
+          <li><span class="checkbox"></span> Checked my "Safe to Spend" number today</li>
+          <li><span class="checkbox"></span> Parked at least 1 impulse urge in the vault</li>
+          <li><span class="checkbox"></span> Logged all purchases (zero guilt)</li>
+          <li><span class="checkbox"></span> Stayed within my daily allowance!</li>
+        </ul>
+        <div class="mood-rating">
+          <span>Money Calm:</span>
+          <span class="circle">1</span>
+          <span class="circle">2</span>
+          <span class="circle">3</span>
+          <span class="circle">4</span>
+          <span class="circle">5</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      ADHD Budget Planner Bonus &bull; Printable Companion Worksheet &bull; Free for Personal Use
+    </div>
+  </div>
+
+</body>
+</html>

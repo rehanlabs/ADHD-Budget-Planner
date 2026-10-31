@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ADHD Budget Planner — Complete Customer Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    @page {
+      size: letter portrait;
+      margin: 0.5in;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #0b1411;
+      color: #e6f4ea;
+      line-height: 1.55;
+      padding: 30px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #11231c 0%, #17382d 100%);
+      border: 1px solid #234d3e;
+      border-radius: 20px;
+      padding: 36px 32px;
+      text-align: center;
+      margin-bottom: 30px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(45, 212, 191, 0.12);
+      color: #2dd4bf;
+      font-weight: 700;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      padding: 5px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(45, 212, 191, 0.3);
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+
+    .tagline {
+      font-size: 14px;
+      color: #94a39d;
+      margin-bottom: 18px;
+    }
+
+    .launch-btn {
+      display: inline-block;
+      background: #14b8a6;
+      color: #042f2e;
+      font-weight: 800;
+      font-size: 16px;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(20, 184, 166, 0.3);
+    }
+
+    .url-text {
+      margin-top: 10px;
+      font-family: monospace;
+      font-size: 12px;
+      color: #99f6e4;
+    }
+
+    .section {
+      background: #111e19;
+      border: 1px solid #1a3328;
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin-bottom: 24px;
+      page-break-inside: avoid;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid #1e382e;
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: #5eead4;
+      margin-top: 14px;
+      margin-bottom: 6px;
+    }
+
+    p {
+      font-size: 13px;
+      color: #cbd5e1;
+      margin-bottom: 10px;
+    }
+
+    .alert-box {
+      background: rgba(234, 179, 8, 0.08);
+      border-left: 4px solid #eab308;
+      padding: 12px 16px;
+      border-radius: 8px;
+      margin: 12px 0;
+      font-size: 12.5px;
+      color: #fef08a;
+    }
+
+    .alert-box strong {
+      color: #ffffff;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 12px;
+    }
+
+    .step-box {
+      background: #0d1713;
+      border: 1px solid #1e382e;
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .step-box h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    ol, ul {
+      padding-left: 18px;
+      font-size: 12.5px;
+      color: #cbd5e1;
+      margin-bottom: 8px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .superpower-card {
+      background: #0d1713;
+      border: 1px solid #1a3328;
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin-bottom: 12px;
+    }
+
+    .superpower-card h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #1a3328;
+      padding: 12px 0;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .faq-q {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+
+    .faq-a {
+      font-size: 12.5px;
+      color: #94a39d;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 24px 0 10px;
+      font-size: 12px;
+      color: #64748b;
+      border-top: 1px solid #1a3328;
+    }
+
+    .footer strong {
+      color: #2dd4bf;
+    }
+
+    @media print {
+      body { background: #0b1411 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; padding: 0; }
+      .section { border-color: #1e382e; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Hero Header -->
+    <div class="hero">
+      <div class="badge">Official Owner's Guide</div>
+      <h1>ADHD Budget Planner</h1>
+      <p class="tagline">Calm Money & Payoff Planner • 100% Offline • Zero Bank Connections • Total Privacy</p>
+      <a href="https://adhd-budget-planner-8q5.pages.dev/" target="_blank" class="launch-btn">🚀 Open Web App</a>
+      <div class="url-text">https://adhd-budget-planner-8q5.pages.dev/</div>
+    </div>
+
+    <!-- Step 1 & 2: Installation -->
+    <div class="section">
+      <h2>📱 Step 1 & 2 — Add to Your Home Screen</h2>
+      <p>Adding ADHD Budget Planner to your phone's home screen does three essential things:</p>
+      <ul>
+        <li><strong>Opens full-screen</strong> without browser URL bars, just like a native app store app.</li>
+        <li><strong>Prevents Safari's 7-day auto-clear</strong>: Apple Safari auto-clears website data after 7 days of inactivity, but home-screen web apps are granted protected permanent storage!</li>
+        <li><strong>Enables 100% offline mode</strong>: Launches and saves your data with zero cellular or Wi-Fi signal.</li>
+      </ul>
+
+      <div class="grid-2">
+        <div class="step-box">
+          <h4>📱 iPhone / iPad (Safari)</h4>
+          <ol>
+            <li>Open the link above in <strong>Safari</strong>.</li>
+            <li>Tap the <strong>Share button</strong> (box with upward arrow).</li>
+            <li>Scroll down and tap <strong>"Add to Home Screen"</strong>.</li>
+            <li>Name it <strong>ADHD Budget</strong> and tap <strong>Add</strong>.</li>
+          </ol>
+        </div>
+
+        <div class="step-box">
+          <h4>🤖 Android (Google Chrome)</h4>
+          <ol>
+            <li>Open the link above in <strong>Chrome</strong>.</li>
+            <li>Tap the <strong>three-dot menu (⋮)</strong> top-right.</li>
+            <li>Tap <strong>"Add to Home Screen"</strong> or <strong>"Install App"</strong>.</li>
+            <li>Tap <strong>Install</strong> to add it to your apps list.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="alert-box">
+        <strong>💻 Mac & Windows Users:</strong> Open in Chrome or Edge and click the install icon (computer with downward arrow) in the address bar. You can also run 100% offline directly from the <code>offline-backup</code> folder in this download!
+      </div>
+    </div>
+
+    <!-- The 4 Superpowers -->
+    <div class="section">
+      <h2>🧠 Your 4 Neurodivergent Superpowers</h2>
+      <p>Engineered from the ground up for dopamine-seeking, easily overwhelmed brains:</p>
+
+      <div class="superpower-card">
+        <h4>1. 🧮 Safe to Spend Today</h4>
+        <p>No complex spreadsheets or 50 budget buckets. You get <strong>one simple number</strong>: what you can safely spend today without risking rent, bills, or debt payments. Before any purchase, ask: <em>"Is this within today's safe number?"</em></p>
+      </div>
+
+      <div class="superpower-card">
+        <h4>2. ⏳ 48-Hour Impulse Vault</h4>
+        <p>Suddenly want to buy something online? Don't fight the urge — <strong>park it in the Vault</strong>. A 48-hour calm countdown begins. Studies show over 80% of impulsive dopamine urges fade after 48 hours. If you still genuinely need it after the timer, buy it guilt-free!</p>
+      </div>
+
+      <div class="superpower-card">
+        <h4>3. 🧟 Zombie Mode</h4>
+        <p>Experiencing ADHD burnout, executive dysfunction, or money anxiety? Tap <strong>Zombie Mode</strong> in the top navigation bar. Every chart, tab, and complex stat instantly disappears, leaving only your daily allowance and 1-tap quick spend buttons.</p>
+      </div>
+
+      <div class="superpower-card">
+        <h4>4. 📝 Brain Dump Scratchpad</h4>
+        <p>Money anxiety often comes from fragmented thoughts ("need to cancel gym", "buy dog food Tuesday"). Use the <strong>Notes</strong> tab as a frictionless thought-dumping pad so nothing gets lost.</p>
+      </div>
+    </div>
+
+    <!-- Onboarding with Maya -->
+    <div class="section">
+      <h2>✨ Getting Started: Meet Maya</h2>
+      <p>When you first launch the app, Maya greets you with a friendly welcome:</p>
+      <ul>
+        <li><strong>Option A (Recommended) — "Start with Maya"</strong>: Maya takes you on a fast, 5-step guided tour showing how your paycheck cycle, bills, and checking balance compute your daily Safe to Spend number.</li>
+        <li><strong>Option B — "I've Got This"</strong>: Jumps straight into your clean dashboard. Tap <strong>Settings (gear icon)</strong> anytime to configure your currency, paycheck frequency, and bank balance.</li>
+        <li>You can replay Maya's walkthrough anytime by tapping the <strong>[👩‍💼 Maya's Guided Tour]</strong> button at the top of the screen.</li>
+      </ul>
+    </div>
+
+    <!-- Protecting Your Data -->
+    <div class="section">
+      <h2>🔒 Protecting Your Privacy & Data</h2>
+      <p>Your financial data is 100% private. It never touches a cloud server or third-party database. Because data lives on your device, we recommend:</p>
+      <ol>
+        <li>Go to <strong>Settings → Download Backup (.json)</strong> once a month and save it to your iCloud, Google Drive, or Downloads.</li>
+        <li>If you ever get a new device, click <strong>Restore Backup</strong> to reload your entire planner in 2 seconds.</li>
+        <li>Use <strong>QR Device Sync</strong> in Settings to transfer your budget between your computer and phone with zero internet!</li>
+      </ol>
+    </div>
+
+    <!-- Frequently Asked Questions -->
+    <div class="section">
+      <h2>❓ Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <div class="faq-q">Q: Does this link to my bank account?</div>
+        <div class="faq-a">No. ADHD Budget Planner is 100% manual by design. Automatic bank syncs often break, disconnect, and trigger anxiety. Entering your balance takes 5 seconds and builds genuine financial mindfulness.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Q: Can I use different currencies?</div>
+        <div class="faq-a">Yes! Go to Settings to toggle between USD ($), CAD (CA$), GBP (£), EUR (€), AUD (AU$), and JPY (¥).</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Q: Can I use this on both my phone and laptop?</div>
+        <div class="faq-a">Yes. You can use Settings → Download Backup on Device 1 and Restore on Device 2, or use the built-in QR Sync feature in Settings.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Q: Need help or have feedback?</div>
+        <div class="faq-a">Message us directly through your Etsy purchase page. We read every message and respond within 24 hours!</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      Thank you for supporting an independent neurodivergent creator! 💚<br>
+      <strong>ADHD Budget Planner &bull; Lifetime Personal License</strong>
+    </div>
+
+  </div>
+
+</body>
+</html>
