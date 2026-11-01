@@ -10,17 +10,18 @@ console.log('================================================================');
 console.log(' ADHD BUDGET PLANNER — INTEGRATED COMPREHENSIVE TEST RUNNER');
 console.log('================================================================\n');
 
+const projectRoot = path.resolve(__dirname, '..');
 const testScripts = [
-  'tests/comprehensive-test-suite.js',
-  'tests/test-time-and-sync.js',
-  'tests/test-dom-and-text.js'
+  path.join(__dirname, 'comprehensive-test-suite.js'),
+  path.join(__dirname, 'test-time-and-sync.js'),
+  path.join(__dirname, 'test-dom-and-text.js')
 ];
 
 let allPassed = true;
 
 testScripts.forEach(script => {
   try {
-    const output = execSync(`node ${script}`, { encoding: 'utf8' });
+    const output = execSync(`node "${script}"`, { cwd: projectRoot, encoding: 'utf8' });
     console.log(output);
   } catch (err) {
     allPassed = false;

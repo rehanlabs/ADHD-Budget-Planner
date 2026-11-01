@@ -1,4 +1,4 @@
-# OS Files
+﻿# OS Files
 .DS_Store
 Thumbs.db
 desktop.ini
@@ -13,3 +13,8 @@ yarn-error.log*
 # Editor directories
 .vscode/
 .idea/
+
+# Archives & Temporary builds
+*.zip
+temp/
+dist/
